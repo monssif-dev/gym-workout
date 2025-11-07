@@ -1,0 +1,14 @@
+/* Hide moon icon in light mode */
+.light .ri-moon-line {
+    display: block;
+}
+.light .ri-sun-line {
+    display: none;
+}
+/* Hide sun icon in dark mode */
+.dark .ri-sun-line {
+    display: block;
+}
+.dark .ri-moon-line {
+    display: none;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym App</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#3b82f6',
+secondary: '#10b981'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'sans': ['Inter', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Noto Sans Arabic', sans-serif;
+}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-arabic">
+<nav class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<a href="index.html" class="flex items-center space-x-2">
+    <div class="w-9 h-9 flex items-center justify-center bg-primary text-white rounded-full"><i class="ri-user-line ri-lg"></i></div>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-4 space-x-reverse">
+<button class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+Login
+</button>
+<a href="signup.html" data-readdy="true" class="bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">
+Create Account
+</a>
+</div>
+</修改前>
+<div class="md:hidden">
+<button class="w-8 h-8 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main>
+<section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20fitness%20gym%20interior%20with%20professional%20equipment%2C%20clean%20minimalist%20design%2C%20natural%20lighting%2C%20motivational%20atmosphere%2C%20people%20working%20out%20in%20background%2C%20upper%20body%20focus%2C%20contemporary%20architecture%2C%20bright%20and%20spacious%20environment%2C%20fitness%20motivation%20concept&width=1920&height=1080&seq=hero-gym-1&orientation=landscape'); background-size: cover; background-position: center; background-blend-mode: overlay;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-center lg:text-left bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+Gym App
+<span class="text-primary block">Your Workout Plan</span>
+</h1>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">
+A complete 6-day workout program, focusing on the upper body and core muscles. Start your fitness journey today!
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<a href="signup.html" class="bg-primary text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-blue-600 transition-colors shadow-lg whitespace-nowrap text-center">
+Start Your Journey Now
+</a>
+<button class="border-2 border-primary text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+Learn More
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+Why Choose Our Gym App?
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+A program specially designed to focus on the upper body with varied and effective exercises.
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-6">
+<i class="ri-calendar-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">6 Full Workout Days</h3>
+<p class="text-gray-600 leading-relaxed">
+A comprehensive program covering all upper body muscles over 6 days a week.
+</p>
+</div>
+<div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mx-auto mb-6">
+<i class="ri-user-heart-line ri-2x text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">No Leg Exercises</h3>
+<p class="text-gray-600 leading-relaxed">
+Full focus on the upper body: chest, back, shoulders, and arms with core exercises.
+</p>
+</div>
+<div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-500/10 rounded-full mx-auto mb-6">
+<i class="ri-trophy-line ri-2x text-orange-500"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Suitable for All Levels</h3>
+<p class="text-gray-600 leading-relaxed">
+Whether you are a beginner or advanced, the program is adjustable to your level and personal goals.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="lg:order-last">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+Detailed Workout Plan
+</h2>
+<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+Each day contains 5 carefully selected exercises with clear instructions and specified sets and reps.
+</p>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full text-sm font-semibold">1</div>
+<div>
+<h4 class="font-semibold text-gray-900">Day 1 - Chest & Back Exercises</h4>
+<p class="text-gray-600 text-sm">Bench Press, Bent-over Row, Overhead Press</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary text-white rounded-full text-sm font-semibold">2</div>
+<div>
+<h4 class="font-semibold text-gray-900">Day 2 - Pull & Push Exercises</h4>
+<p class="text-gray-600 text-sm">Pull-ups, Dumbbell Chest Press, Seated Cable Row</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm">
+<div class="w-8 h-8 flex items-center justify-center bg-orange-500 text-white rounded-full text-sm font-semibold">3</div>
+<div>
+<h4 class="font-semibold text-gray-900">Day 3 - Shoulders & Core Exercises</h4>
+<p class="text-gray-600 text-sm">Incline DB Press, TRX Rows, Hip Bridge</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=Professional%20fitness%20trainer%20demonstrating%20upper%20body%20exercises%20in%20modern%20gym%2C%20workout%20routine%20demonstration%2C%20exercise%20form%20and%20technique%2C%20fitness%20instruction%2C%20clean%20gym%20environment%2C%20motivational%20fitness%20scene%2C%20strength%20training%20equipment&width=600&height=400&seq=workout-demo-1&orientation=landscape"
+alt="Gym Exercises"
+class="rounded-2xl shadow-2xl object-cover w-full h-96">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+App Features
+</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Everything you need to achieve your fitness goals.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="text-center p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-4">
+<i class="ri-smartphone-line ri-xl text-primary"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-2">Responsive Design</h3>
+<p class="text-gray-600 text-sm">Works on all devices</p>
+</div>
+<div class="text-center p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mx-auto mb-4">
+<i class="ri-shield-check-line ri-xl text-secondary"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-2">Safe and Secure</h3>
+<p class="text-gray-600 text-sm">User data protection</p>
+</div>
+<div class="text-center p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-orange-500/10 rounded-full mx-auto mb-4">
+<i class="ri-bar-chart-line ri-xl text-orange-500"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-2">Track Progress</h3>
+<p class="text-gray-600 text-sm">Monitor your daily achievements</p>
+</div>
+<div class="text-center p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-purple-500/10 rounded-full mx-auto mb-4">
+<i class="ri-heart-pulse-line ri-xl text-purple-500"></i>
+</div>
+<h3 class="font-semibold text-gray-900 mb-2">Clear Instructions</h3>
+<p class="text-gray-600 text-sm">Detailed explanation for each exercise</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary text-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl sm:text-4xl font-bold mb-6">
+Ready to Start Your Fitness Journey?
+</h2>
+<p class="text-xl mb-8 text-blue-100">
+Join thousands of users who have achieved their goals with our gym app.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="signup.html" class="bg-white text-primary px-8 py-4 !rounded-button text-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap text-center">
+Create a Free Account
+</a>
+<button class="border-2 border-white text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+Watch Demo
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<a href="index.html" class="flex items-center space-x-2 mb-4">
+    <div class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded-full border border-gray-700"><i class="ri-user-line ri-lg"></i></div>
+    <span class="text-xl font-bold font-['Pacifico']">Gym App</span>
+</a>
+<p class="text-gray-300 mb-4 leading-relaxed">
+The premier gym app for upper body focus. Start your fitness journey with us today.
+</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-facebook-fill ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-twitter-line ri-lg"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+<li><a href="index3.html" class="hover:text-white transition-colors">Dashboard</a></li>
+<li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Support</h4>
+<ul class="space-y-2 text-gray-300">
+<li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+<li><a href="#" class="hover:text-white transition-colors">Help</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Gym App. All Rights Reserved.</p>
+<p>&lt;/DEV BY Monssif&gt;</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('.md\\:hidden button');
+const nav = document.querySelector('nav > div');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'hidden md:hidden bg-white border-t border-gray-100 px-4 py-2';
+mobileMenu.innerHTML = `
+<div class="space-y-2">
+<a href="index2.html" class="block w-full text-left text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+Sign In
+</a>
+<a href="signup.html" data-readdy="true" class="block w-full bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-blue-600 transition-colors text-center">
+Create Account
+</a>
+</div>
+`;
+nav.appendChild(mobileMenu);
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="smooth-scrolling">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="cta-buttons-interaction">
+document.addEventListener('DOMContentLoaded', function() {
+const ctaButtons = document.querySelectorAll('button');
+ctaButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+if (this.textContent.includes('Start') || this.textContent.includes('Create Account')) {
+window.location.href = 'signup.html';
+} else if (this.textContent.includes('تسجيل الدخول')) {
+console.log('Redirecting to login page...');
+} else if (this.textContent.includes('تعرف أكثر')) {
+document.querySelector('section:nth-of-type(2)').scrollIntoView({
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>

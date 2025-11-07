@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym App</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'brand': ['Pacifico', 'cursive']
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-9 h-9 flex items-center justify-center bg-primary text-white rounded-full"><i class="ri-user-line ri-lg"></i></div>
+                    </a>
+                    <a href="index.html" class="text-xl font-bold font-['Pacifico'] text-gray-900 dark:text-white">Gym App</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Desktop Navigation Links -->
+                    <div class="hidden sm:flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="index3.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Dashboard</a>
+                        <a href="settings.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Settings</a>
+                        <a href="about.html" class="text-primary dark:text-primary px-3 py-2 text-sm font-bold transition-colors">About</a>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors">
+                        <i class="ri-sun-line text-xl"></i>
+                        <i class="ri-moon-line text-xl"></i>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <div class="sm:hidden">
+                        <button id="mobile-menu-button" class="w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300">
+                            <i class="ri-menu-line ri-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div class="text-center mb-8 sm:mb-12">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">About Us</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Learn more about the Gym App and its creator.</p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h2>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                The Gym App is dedicated to providing accessible and effective workout plans for everyone. Our mission is to empower individuals to achieve their fitness goals through well-structured, easy-to-follow routines, focusing on specific muscle groups to help you build strength and improve your overall well-being.
+            </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 sm:p-8">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Meet the Developer</h2>
+            <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                <img class="h-28 w-28 rounded-full object-cover border-4 border-primary" src="https://placehold.co/200x200/3b82f6/white?text=Monssif" alt="Monssif Web Profile">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Monssif Web</h3>
+                    <p class="text-primary text-md mb-2">Full-Stack Developer & Fitness Enthusiast</p>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Hello! I'm Monssif, the creator behind the Gym App. With a passion for both web development and fitness, I aimed to build a simple yet powerful tool to help others stay active and achieve their physical goals. This project is a blend of my technical skills and my belief in the importance of a healthy lifestyle. I hope you find this workout plan useful on your journey!
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"><i class="ri-linkedin-box-fill ri-xl"></i></a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"><i class="ri-github-fill ri-xl"></i></a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"><i class="ri-twitter-x-line ri-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="index.html" class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded-full border border-gray-700"><i class="ri-user-line ri-lg"></i></div>
+                <span class="text-xl font-bold font-['Pacifico']">Gym App</span>
+            </a>
+            <p class="text-gray-400 mb-4 max-w-2xl mx-auto">The premier gym app for upper body focus. Start your fitness journey with us today.</p>
+            <div class="flex gap-4 justify-center mb-8">
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-facebook-fill ri-lg"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-instagram-line ri-lg"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-twitter-x-line ri-lg"></i></a>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-gray-500">
+                <p>&copy; 2024 Gym Workout Plan. All Rights Reserved. &lt;/DEV BY Monssif&gt;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script3.js"></script>
+    <script>
+        // Mobile menu toggle for about.html
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const nav = document.querySelector('nav > div');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden sm:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-4 py-2';
+            mobileMenu.innerHTML = `
+                <div class="space-y-2">
+                    <a href="index.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="index3.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">Dashboard</a>
+                    <a href="settings.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">Settings</a>
+                    <a href="about.html" class="block w-full text-left text-primary dark:text-primary px-3 py-2 text-sm font-bold">About</a>
+                </div>
+            `;
+            nav.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.toggle('ri-menu-line');
+                icon.classList.toggle('ri-close-line');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Day Upper Body & Core Workout Plan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'brand': ['Pacifico', 'cursive']
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-9 h-9 flex items-center justify-center bg-primary text-white rounded-full"><i class="ri-user-line ri-lg"></i></div>
+                    </a>
+                    <a href="index.html" class="text-xl font-bold font-['Pacifico'] text-gray-900 dark:text-white">Gym App</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Desktop Navigation Links -->
+                    <div class="hidden sm:flex items-center space-x-4">
+                        <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="index3.html" class="text-primary dark:text-primary px-3 py-2 text-sm font-bold transition-colors">Dashboard</a>
+                        <a href="settings.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Settings</a>
+                        <a href="about.html" class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="w-10 h-10 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors">
+                        <i class="ri-sun-line text-xl"></i>
+                        <i class="ri-moon-line text-xl"></i>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <div class="sm:hidden">
+                        <button id="mobile-menu-button" class="w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300">
+                            <i class="ri-menu-line ri-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div class="text-center mb-8 sm:mb-12">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2">Workout Plan</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400">6-Day Upper Body & Core Focus</p>
+        </div>
+
+        <!-- Day 1 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 1</h2>
+                <i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i>
+            </button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4">
+                        <div class="cursor-pointer">
+                            <h3 class="text-lg font-semibold">Bench Press</h3>
+                            <p class="text-sm font-medium text-primary">3 sets x 8 reps</p>
+                        </div>
+                        <div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm">
+                        <p class="instructions">Lie on a flat bench, grip the bar slightly wider than shoulder-width. Lower the bar to your mid-chest and press it back up.</p>
+                            <img src="https://placehold.co/600x400/3b82f6/white?text=Bench+Press+Image" alt="Bench Press" class="mt-3 rounded-lg w-full max-w-sm"> <!-- Replace with actual Bench Press image/GIF URL -->
+                        </div>
+                    </div>
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Bent-over Row</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hinge at your hips with a flat back. Pull the barbell towards your lower chest, squeezing your back muscles.</p><img src="https://placehold.co/600x400/3b82f6/white?text=Bent-over+Row+Image" alt="Bent-over Row" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Bent-over Row image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Overhead Press</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Stand with the bar on your front shoulders. Press the bar overhead until your arms are fully extended.</p><img src="https://placehold.co/600x400/3b82f6/white?text=Overhead+Press+Image" alt="Overhead Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Overhead Press image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Face Pulls</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Use a rope attachment on a cable machine. Pull the rope towards your face, keeping your elbows high and wide.</p><img src="https://placehold.co/600x400/3b82f6/white?text=Face+Pulls+Image" alt="Face Pulls" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Face Pulls image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Plank</h3><p class="text-sm font-medium text-primary">3 sets x 45 seconds</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hold a push-up position on your forearms. Keep your body in a straight line from head to heels.</p><img src="https://placehold.co/600x400/3b82f6/white?text=Plank+Image" alt="Plank" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Plank image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 2</h2>
+                <i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i>
+            </button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Pull-ups</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Grip the bar with hands wider than shoulder-width. Pull your chest to the bar.</p><img src="https://placehold.co/600x400/10b981/white?text=Pull-ups+Image" alt="Pull-ups" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Pull-ups image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Dumbbell Chest Press</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on a bench with a dumbbell in each hand. Press them up over your chest.</p><img src="https://placehold.co/600x400/10b981/white?text=Dumbbell+Chest+Press+Image" alt="Dumbbell Chest Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Dumbbell Chest Press image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Seated Cable Row</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Sit at a cable row machine. Pull the handle to your midsection, squeezing your back.</p><img src="https://placehold.co/600x400/10b981/white?text=Seated+Cable+Row+Image" alt="Seated Cable Row" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Seated Cable Row image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Lateral Raises</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Stand with dumbbells at your sides. Raise them out to the sides until they're at shoulder height.</p><img src="https://placehold.co/600x400/10b981/white?text=Lateral+Raises+Image" alt="Lateral Raises" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Lateral Raises image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Hollow Hold</h3><p class="text-sm font-medium text-primary">3 sets x 30 seconds</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on your back. Lift your shoulders and legs off the floor, keeping your lower back pressed down.</p><img src="https://placehold.co/600x400/10b981/white?text=Hollow+Hold+Image" alt="Hollow Hold" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Hollow Hold image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"><h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 3</h2><i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i></button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Incline DB Press</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on an incline bench. Press dumbbells up from your upper chest.</p><img src="https://placehold.co/600x400/ef4444/white?text=Incline+DB+Press+Image" alt="Incline DB Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Incline DB Press image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">TRX Rows</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lean back holding TRX handles. Pull your chest towards the handles.</p><img src="https://placehold.co/600x400/ef4444/white?text=TRX+Rows+Image" alt="TRX Rows" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual TRX Rows image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Hip Bridge</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on your back with knees bent. Lift your hips towards the ceiling, squeezing your glutes.</p><img src="https://placehold.co/600x400/ef4444/white?text=Hip+Bridge+Image" alt="Hip Bridge" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Hip Bridge image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Cable Face Pull</h3><p class="text-sm font-medium text-primary">3 sets x 15 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Use a rope on a high pulley. Pull towards your face, externally rotating your shoulders.</p><img src="https://placehold.co/600x400/ef4444/white?text=Cable+Face+Pull+Image" alt="Cable Face Pull" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Cable Face Pull image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Pallof Press</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Stand sideways to a cable machine. Hold the handle at your chest and press it straight out, resisting rotation.</p><img src="https://placehold.co/600x400/ef4444/white?text=Pallof+Press+Image" alt="Pallof Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Pallof Press image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"><h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 4</h2><i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i></button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Dips</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Use parallel bars. Lower your body until your shoulders are below your elbows, then press back up.</p><img src="https://placehold.co/600x400/f97316/white?text=Dips+Image" alt="Dips" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Dips image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Single-arm Row</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Kneel on a bench with one knee and hand. Row a dumbbell up to your chest.</p><img src="https://placehold.co/600x400/f97316/white?text=Single-arm+Row+Image" alt="Single-arm Row" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Single-arm Row image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Seated Overhead Press</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Sit on a bench with back support. Press dumbbells or a barbell overhead.</p><img src="https://placehold.co/600x400/f97316/white?text=Seated+Overhead+Press+Image" alt="Seated Overhead Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Seated Overhead Press image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Band Pull-Aparts</h3><p class="text-sm font-medium text-primary">3 sets x 20 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hold a resistance band with both hands. Pull the band apart by squeezing your shoulder blades.</p><img src="https://placehold.co/600x400/f97316/white?text=Band+Pull-Aparts+Image" alt="Band Pull-Aparts" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Band Pull-Aparts image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Dead-bug</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on your back with arms and knees in the air. Lower opposite arm and leg slowly, then return.</p><img src="https://placehold.co/600x400/f97316/white?text=Dead-bug+Image" alt="Dead-bug" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Dead-bug image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"><h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 5</h2><i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i></button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Chest Supported Row</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie face down on an incline bench. Row dumbbells up, squeezing your back.</p><img src="https://placehold.co/600x400/8b5cf6/white?text=Chest+Supported+Row+Image" alt="Chest Supported Row" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Chest Supported Row image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Weighted Push-ups</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Perform a standard push-up with a weight plate on your back.</p><img src="https://placehold.co/600x400/8b5cf6/white?text=Weighted+Push-ups+Image" alt="Weighted Push-ups" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Weighted Push-ups image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Inverted Rows</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie under a fixed bar (like in a Smith machine). Pull your chest up to the bar.</p><img src="https://placehold.co/600x400/8b5cf6/white?text=Inverted+Rows+Image" alt="Inverted Rows" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Inverted Rows image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Rear-delt Fly</h3><p class="text-sm font-medium text-primary">3 sets x 15 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hinge at the hips with a flat back. Raise dumbbells out to your sides, squeezing your rear delts.</p><img src="https://placehold.co/600x400/8b5cf6/white?text=Rear-delt+Fly+Image" alt="Rear-delt Fly" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Rear-delt Fly image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Side Plank</h3><p class="text-sm font-medium text-primary">3 sets x 30s per side</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Lie on your side, supported by one forearm. Keep your body in a straight line.</p><img src="https://placehold.co/600x400/8b5cf6/white?text=Side+Plank+Image" alt="Side Plank" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Side Plank image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-workout bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mb-6">
+            <button class="day-toggle w-full p-5 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"><h2 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Day 6</h2><i class="toggle-icon ri-add-line text-2xl text-primary font-bold transition-transform"></i></button>
+            <div class="exercises-container overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                <div class="p-5 space-y-4">
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Machine Chest Press</h3><p class="text-sm font-medium text-primary">3 sets x 8 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Sit at a chest press machine. Press the handles forward until your arms are extended.</p><img src="https://placehold.co/600x400/ec4899/white?text=Machine+Chest+Press+Image" alt="Machine Chest Press" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Machine Chest Press image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Cable Row</h3><p class="text-sm font-medium text-primary">3 sets x 10 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Use a seated cable row machine. Pull the handle towards your abdomen.</p><img src="https://placehold.co/600x400/ec4899/white?text=Cable+Row+Image" alt="Cable Row" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Cable Row image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Farmer's Carry</h3><p class="text-sm font-medium text-primary">3 sets x 40m</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hold a heavy dumbbell or kettlebell in each hand. Walk for the specified distance, keeping your core tight and posture upright.</p><img src="https://placehold.co/600x400/ec4899/white?text=Farmer%27s+Carry+Image" alt="Farmer's Carry" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Farmer's Carry image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Face Pulls</h3><p class="text-sm font-medium text-primary">3 sets x 15 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Use a rope attachment on a cable machine. Pull the rope towards your face, keeping your elbows high and wide.</p><img src="https://placehold.co/600x400/ec4899/white?text=Face+Pulls+Image" alt="Face Pulls" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Face Pulls image/GIF URL -->
+                    <div class="exercise-card border-t border-gray-200 dark:border-gray-700 pt-4"><div class="cursor-pointer"><h3 class="text-lg font-semibold">Hanging Knee Raises</h3><p class="text-sm font-medium text-primary">3 sets x 12 reps</p></div><div class="exercise-details hidden mt-3 text-gray-600 dark:text-gray-400 text-sm"><p class="instructions">Hang from a pull-up bar. Raise your knees towards your chest without swinging.</p><img src="https://placehold.co/600x400/ec4899/white?text=Hanging+Knee+Raises+Image" alt="Hanging Knee Raises" class="mt-3 rounded-lg w-full max-w-sm"></div></div> <!-- Replace with actual Hanging Knee Raises image/GIF URL -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="index.html" class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded-full border border-gray-700"><i class="ri-user-line ri-lg"></i></div>
+                <span class="text-xl font-bold font-['Pacifico']">Gym App</span>
+            </a>
+            <p class="text-gray-400 mb-4 max-w-2xl mx-auto">The premier gym app for upper body focus. Start your fitness journey with us today.</p>
+            <div class="flex gap-4 justify-center mb-8">
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-facebook-fill ri-lg"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-instagram-line ri-lg"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-twitter-x-line ri-lg"></i></a>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-gray-500">
+                <p>&copy; 2024 Gym Workout Plan. All Rights Reserved. &lt;/DEV BY Monssif&gt;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script3.js"></script>
+    <script>
+        // Mobile menu toggle for index3.html
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const nav = document.querySelector('nav > div');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden sm:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-4 py-2';
+            mobileMenu.innerHTML = `
+                <div class="space-y-2">
+                    <a href="index.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="index3.html" class="block w-full text-left text-primary dark:text-primary px-3 py-2 text-sm font-bold">Dashboard</a>
+                    <a href="settings.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">Settings</a>
+                    <a href="about.html" class="block w-full text-left text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                </div>
+            `;
+            nav.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.toggle('ri-menu-line');
+                icon.classList.toggle('ri-close-line');
+            });
+        });
+    </script>
+</body>
+</html>

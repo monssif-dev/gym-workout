@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In - Gym App</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#3b82f6',
+secondary: '#10b981'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'inter': ['Inter', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+</style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-900 font-inter min-h-screen">
+<nav class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center">
+<a href="index.html" class="flex items-center space-x-2">
+    <div class="w-9 h-9 flex items-center justify-center bg-primary text-white rounded-full"><i class="ri-user-line ri-lg"></i></div>
+</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<a href="index.html" data-readdy="true" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+Home
+</a>
+<a href="signup.html" class="bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">
+Sign Up
+</a>
+</div>
+<div class="md:hidden">
+<button class="w-8 h-8 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</div>
+</nav>
+
+<main class="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-md w-full space-y-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h2>
+<p class="text-gray-600">Sign in to your account to continue your fitness journey</p>
+</div>
+
+<div class="bg-white rounded-2xl shadow-xl p-8 space-y-6">
+<form class="space-y-6">
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+Email or Username
+</label>
+<div class="relative">
+<input
+id="email"
+name="email"
+type="email"
+required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+placeholder="Enter your email or username"
+>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-user-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<label for="password" class="block text-sm font-medium text-gray-700 mb-2">
+Password
+</label>
+<div class="relative">
+<input
+id="password"
+name="password"
+type="password"
+required
+class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-colors pr-12"
+placeholder="Enter your password"
+>
+<button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors">
+<i class="ri-eye-line ri-lg"></i>
+</div>
+</button>
+</div>
+</div>
+
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<div class="relative">
+<input
+id="remember-me"
+name="remember-me"
+type="checkbox"
+class="sr-only"
+>
+<div class="w-5 h-5 border-2 border-gray-300 rounded cursor-pointer flex items-center justify-center transition-colors hover:border-primary">
+<i class="ri-check-line text-white text-xs hidden"></i>
+</div>
+</div>
+<label for="remember-me" class="ml-2 block text-sm text-gray-700 cursor-pointer">
+Remember me
+</label>
+</div>
+<a href="#" class="text-sm text-primary hover:text-blue-600 transition-colors">
+Forgot password?
+</a>
+</div>
+
+<button
+type="submit"
+class="w-full bg-primary text-white py-3 px-4 !rounded-button text-sm font-semibold hover:bg-blue-600 transition-colors shadow-lg whitespace-nowrap"
+>
+Sign In
+</button>
+</form>
+
+<div class="text-center">
+<p class="text-sm text-gray-600">
+Don't have an account?
+<a href="signup.html" class="text-primary hover:text-blue-600 font-medium transition-colors ml-1">
+Sign up here
+</a>
+</p>
+</div>
+
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-gray-300"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-white text-gray-500">Or continue with</span>
+</div>
+</div>
+
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-google-fill ri-lg text-red-500"></i>
+</div>
+Google
+</button>
+<button class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-facebook-fill ri-lg text-blue-600"></i>
+</div>
+Facebook
+</button>
+</div>
+</div>
+</div>
+</main>
+
+<footer class="bg-gray-900 text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <a href="index.html" class="flex items-center justify-center space-x-2 mb-4">
+            <div class="w-9 h-9 flex items-center justify-center bg-gray-800 text-white rounded-full border border-gray-700"><i class="ri-user-line ri-lg"></i></div>
+            <span class="text-xl font-bold font-['Pacifico']">Gym App</span>
+        </a>
+        <p class="text-gray-400 mb-4 max-w-2xl mx-auto">The premier gym app for upper body focus. Start your fitness journey with us today.</p>
+        <div class="flex gap-4 justify-center mb-8">
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-facebook-fill ri-lg"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-instagram-line ri-lg"></i></a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"><i class="ri-twitter-x-line ri-lg"></i></a>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-gray-500">
+            <p>&copy; 2024 Gym Workout Plan. All Rights Reserved. &lt;/DEV BY Monssif&gt;</p>
+        </div>
+    </div>
+</footer>
+
+<script id="mobile-menu-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('.md\\:hidden button');
+const nav = document.querySelector('nav > div');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'hidden md:hidden bg-white border-t border-gray-100 px-4 py-2';
+mobileMenu.innerHTML = `
+<div class="space-y-2">
+<a href="https://readdy.ai/home/a50e123e-3990-426a-8356-2404c550fb92/74759505-aeab-4a95-8067-6593b54abd53" data-readdy="true" class="block w-full text-left text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+Home
+</a>
+<a href="signup.html" class="block w-full bg-primary text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-blue-600 transition-colors text-center">
+Sign Up
+</a>
+</div>
+`;
+nav.appendChild(mobileMenu);
+
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+
+<script id="password-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const passwordInput = document.getElementById('password');
+const toggleButton = passwordInput.nextElementSibling;
+const toggleIcon = toggleButton.querySelector('i');
+
+toggleButton.addEventListener('click', function() {
+if (passwordInput.type === 'password') {
+passwordInput.type = 'text';
+toggleIcon.className = 'ri-eye-off-line ri-lg';
+} else {
+passwordInput.type = 'password';
+toggleIcon.className = 'ri-eye-line ri-lg';
+}
+});
+});
+</script>
+
+<script id="checkbox-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const checkbox = document.getElementById('remember-me');
+const checkboxVisual = checkbox.nextElementSibling;
+const checkIcon = checkboxVisual.querySelector('i');
+
+checkbox.addEventListener('change', function() {
+if (this.checked) {
+checkboxVisual.classList.add('bg-primary', 'border-primary');
+checkboxVisual.classList.remove('border-gray-300');
+checkIcon.classList.remove('hidden');
+} else {
+checkboxVisual.classList.remove('bg-primary', 'border-primary');
+checkboxVisual.classList.add('border-gray-300');
+checkIcon.classList.add('hidden');
+}
+});
+
+checkboxVisual.addEventListener('click', function() {
+checkbox.checked = !checkbox.checked;
+checkbox.dispatchEvent(new Event('change'));
+});
+});
+</script>
+
+<script id="form-submission">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+const submitButton = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+
+const email = document.getElementById('email').value;
+const password = document.getElementById('password').value;
+const rememberMe = document.getElementById('remember-me').checked;
+
+if (!email || !password) {
+alert('Please fill in all required fields');
+return;
+}
+
+submitButton.textContent = 'Signing In...';
+submitButton.disabled = true;
+
+setTimeout(() => {
+console.log('Login attempt:', { email, password, rememberMe });
+alert('Sign in successful! Redirecting to your workout plan.');
+window.location.href = 'index3.html';
+}, 1500);
+});
+});
+</script>
+
+</body>
+</html>
